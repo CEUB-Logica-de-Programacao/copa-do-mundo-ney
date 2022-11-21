@@ -72,6 +72,24 @@ A segunda etapa consiste em gerar os jogos da primeira fase da Copa do Mundo. Pa
 2. Gere os jogos da primeira fase;
 3. Imprima na tela os jogos da primeira fase.
 
+```
+n = 2
+print('Jogos do Grupo A:')
+jogoA1 = random.sample(grupoA, n)
+grupoA = list(set(grupoA) - set(jogoA1))
+jogoA2 = random.sample(grupoA, n)
+jogoA3 = [jogoA1[0], jogoA2[0]]
+jogoA4 = [jogoA1[1], jogoA2[1]]
+jogoA5 = [jogoA1[0], jogoA4[1]]
+jogoA6 = [jogoA3[1], jogoA4[1]]
+print(jogoA1)
+print(jogoA2)
+print(jogoA3)
+print(jogoA4)
+print(jogoA5)
+print(jogoA6)
+```
+
 ## Terceira Etapa
 
 A terceira etapa consiste em criar um sistema que construa a pontuação dos grupos da Copa do Mundo. Para isso, você deve
