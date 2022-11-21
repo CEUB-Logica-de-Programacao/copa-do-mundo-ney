@@ -22,7 +22,48 @@ mesmo grupo;
 ### Dicas
 
 1. Utilize a biblioteca [random](https://docs.python.org/3/library/random.html) para realizar o sorteio;
-
+```
+import random
+grupoA = {}
+grupoB = {}
+grupoC = {}
+grupoD = {}
+grupoE = {}
+grupoF = {}
+grupoG ={}
+grupoH = {}
+times_euro = ['Holanda', 'Inglaterra', 'Gales', 'Polônia', 'França', 'Espanha', 'Alemanha', 'Bélgica', 'Croácia', 'Sérvia', 'Suíça', 'Portugal']
+times_america = ['Equador','EUA','Argentina','México', 'CostaRica','Canadá','Brasil','Uruguai', 'Dinamarca']
+times_asia = ['Qatar','Irã','ArábiaSaudita','Tunísia','Japão','Coreia']
+times_africa = ['Marrocos','Senegal','Camarões','Gana',]
+times_oceania = ['Austrália']
+times = times_euro + times_america + times_asia + times_africa + times_oceania
+n = 4
+sorteioA = random.sample(times, n)
+times = list(set(times) - set(sorteioA))
+sorteioB = random.sample(times, n)
+times = list(set(times)- set (sorteioB))
+sorteioC = random.sample(times, n)
+times = list(set(times)- set (sorteioC))
+sorteioD = random.sample(times, n)
+times = list(set(times)- set (sorteioD))
+sorteioE = random.sample(times, n)
+times = list(set(times)- set (sorteioE))
+sorteioF = random.sample(times, n)
+times = list(set(times)- set (sorteioF))
+sorteioG = random.sample(times,n)
+times = list(set(times) - set(sorteioG))
+sorteioH = random.sample(times,n)
+times = list(set(times) - set(sorteioH))
+grupoA = sorteioA
+grupoB = sorteioB
+grupoC = sorteioC
+grupoD = sorteioD
+grupoE = sorteioE
+grupoF = sorteioF
+grupoG = sorteioG
+grupoH = sorteioH
+```
 ## Segunda Etapa
 
 A segunda etapa consiste em gerar os jogos da primeira fase da Copa do Mundo. Para isso, você deve criar um programa que:
